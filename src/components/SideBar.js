@@ -9,6 +9,7 @@ import { LiaDownloadSolid } from 'react-icons/lia';
 import { AiFillLike } from 'react-icons/ai';
 import { CgProfile } from 'react-icons/cg';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const SideBar = () => {
   const isMenuOpen = useSelector((store) => store.collapse.isMenuOpen);
@@ -20,10 +21,10 @@ const SideBar = () => {
 
       {/* Home */}
       <div className="border-b border-gray-300 pb-3">
-        <h1 className="font-bold flex items-center gap-3 my-3">
+        <Link to = "/" ><h1 className="font-bold flex items-center gap-3 my-3">
           <FaHome />
           Home
-        </h1>
+        </h1> </Link>
 
         <h1 className="font-bold flex items-center gap-3 my-3">
           <SiYoutubeshorts />

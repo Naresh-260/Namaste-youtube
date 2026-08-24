@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import collapseSlice from "./collapseSlice"
+import chatSlice from "./chatSlice"
 
 const appStore = configureStore({
-
     reducer :{
-        collapse : collapseSlice
+        collapse : collapseSlice,
+        chat : chatSlice
     }
 
 })
